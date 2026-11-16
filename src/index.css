@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clay-card {
+    background-color: #f1f3f6;
+    border-radius: 32px;
+    box-shadow: 12px 12px 24px rgba(166, 180, 200, 0.7), 
+               -12px -12px 24px rgba(255, 255, 255, 0.9);
+  }
+  .clay-btn {
+    border-radius: 9999px;
+    box-shadow: 6px 6px 12px rgba(166, 180, 200, 0.7), 
+               -6px -6px 12px rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease-in-out;
+  }
+  .clay-btn:active {
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.1), 
+                inset -6px -6px 12px rgba(255, 255, 255, 0.5);
+  }
+  .clay-input {
+    background-color: #f1f3f6;
+    border-radius: 16px;
+    box-shadow: inset 4px 4px 8px rgba(166, 180, 200, 0.7), 
+                inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+}
